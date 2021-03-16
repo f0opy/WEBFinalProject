@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Register</title>
+	<link rel="stylesheet" type="text/css" href="css/Login__Styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<?php
+
+$link = mysqli_connect(
+            'localhost',  /* Хост, к которому мы подключаемся */
+            'root',       /* Имя пользователя */
+            'root',   /* Используемый пароль */
+            'dbforweb');     /* База данных для запросов по умолчанию */
+?>
+	<div class="container3">
+		<div class="main__image"><img src="img/imageLogin.svg" alt=""></div>
+		<div class="main__header"><h1>РЕГИСТРАЦИЯ</h1></div>
+		<div class="input">
+			<div class="input__text1">
+				<input type="text" placeholder="Введите Имя" id="input_phone" class=".input1">
+				<input type="text" placeholder="Введите Ваш E-mail" id="input_phone" class=".input1">
+				<input type="password" placeholder="Введите Ваш пароль" id="input_phone" class=".input1">
+				<input type="password" placeholder="Подтвердите Ваш пароль" id="input_phone" class=".input1">
+				
+	   		</div>
+		</div>
+		<a href="" class="btn2"><div class="btn__text">Отправить</div></a>
+	</div>
+<?php
+	mysqli_close($link);
+?>
+</body>
+</html>

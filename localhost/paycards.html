@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>cards.kz</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/Login__Styles.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<header class="headerForCards">
+    <form>
+    <div class="menuCards">
+        <a href="index.html" class="logo logoForCards" id="link_main"><img src="img/logo.svg"></a>
+        <div class="menuIcon">
+            <a href="" class="searchcards"><img src="img/search.svg" height="17.49px"></a>
+            <a href="" class="avatar"><img src="img/avatar.png"></a>
+        </div>
+    </div>
+    <div class="cardsText">
+        <h2>Получить доступ </h2>
+        <p>Оформите подписку на интересующее количество слов навсегда</p>
+    </div>
+    <div class="containerForLevels" id="containerForLevel">
+        <div class="price">
+            <input type="checkbox" name="level-1" id="checkboxfalse500" class="checkboxFalseForPrice" >
+            <input type="checkbox" name="level-1" id="checkbox500" class="checkboxForPrice" onchange="ifCheckedLevel('checkbox500', 'checkboxfalse500')">
+            <img src="img/level_500.svg" class="iconCards">
+            <p class="text-price priceText">База Английского языка</p>
+            <h2 class="number-price priceCards" id="l_500">500</h2>
+            <p class="words-price">слов</p>
+            <hr class="line-price">
+            <p class="withDiscound">2 500 ₸</p>
+            <p class="withOutDiscound"><del>3 000 ₸</del></p>
+        </div>
+        <div class="price">
+            <input type="checkbox" name="level-2" id="checkboxfalse1000" class="checkboxFalseForPrice">
+            <input type="checkbox" name="level-2" id="checkbox1000" class="checkboxForPrice" onchange="ifCheckedLevel('checkbox1000', 'checkboxfalse1000')">
+            <img src="img/level_1000.svg" class="iconCards">
+            <p class="text-price">Общение на английском языке в путешествии</p>
+            <h2 class="number-price priceCards" id="l_1000">1000</h2>
+            <p class="words-price">слов</p>
+            <hr class="line-price">
+            <p class="withDiscound">3 500 ₸</p>
+            <p class="withOutDiscound"><del>4 500 ₸</del></p>
+        </div>
+        <div class="price">
+            <input type="checkbox" name="level-3" id="checkboxfalse2000" class="checkboxFalseForPrice">
+            <input type="checkbox" name="level-3" id="checkbox2000" class="checkboxForPrice" onchange="ifCheckedLevel('checkbox2000', 'checkboxfalse2000')">
+            <img src="img/level_2000.svg" class="iconCards">
+            <p class="text-price">Чтение книг, просмотр фильмов</p>
+            <h2 class="number-price priceCards" id="l_2000">2000</h2>
+            <p class="words-price">слов</p>
+            <hr class="line-price">
+            <p class="withDiscound">5 000 ₸</p> 
+            <p class="withOutDiscound"><del>7 500 ₸</del></p>
+        </div>
+        <div class="price">
+            <input type="checkbox" name="level-4" id="checkboxfalse3000" class="checkboxFalseForPrice">
+            <input type="checkbox" name="level-4" id="checkbox3000" class="checkboxForPrice" onchange="ifCheckedLevel('checkbox3000', 'checkboxfalse3000')">
+            <img src="img/level_3000.svg" class="iconCards">
+            <p class="text-price priceText300">Свободное общение</p>
+            <h2 class="number-price priceCards" id="l_3000">3000</h2>
+            <p class="words-price">слов</p>
+            <hr class="line-price">
+            <p class="withDiscound">7 500 ₸</p>
+            <p class="withOutDiscound"><del>10 000 ₸</del></p>
+        </div>
+        <div class="price">
+           <input type="checkbox" name="level-5" id="checkboxfalse3500" class="checkboxFalseForPrice">
+            <input type="checkbox" name="level-5" id="checkbox3500" class="checkboxForPrice" onchange="ifCheckedLevel('checkbox3500', 'checkboxfalse3500')">
+            <img src="img/level_3500.svg" class="iconCards">
+            <p class="text-price">Обучение на английском языке</p>
+            <h2 class="number-price priceCards" id="l_3500">3500</h2>
+            <p class="words-price">слов</p>
+            <hr class="line-price">
+            <p class="withDiscound">9 990 ₸</p>
+            <p class="withOutDiscound"><del>13 000 ₸</del></p>
+        </div>
+         <div class="price">
+            <input type="checkbox" name="level-6" id="checkboxfalse5000" class="checkboxFalseForPrice">
+            <input type="checkbox" name="level-6" id="checkbox5000" class="checkboxForPrice" onchange="ifCheckedLevel('checkbox5000', 'checkboxfalse5000')">
+            <img src="img/level_5000.svg" class="iconCards">
+            <p class="text-price">Свободное владение английским языком</p>
+            <h2 class="number-price priceCards" id="l_5000">5000</h2>
+            <p class="words-price">слов</p>
+            <hr class="line-price">
+            <p class="withDiscound">15 000 ₸</p>
+            <p class="withOutDiscound"><del>90 000 ₸</del></p>
+        </div>
+    </div>
+    </form>
+</header>
+<main class="mainCards">
+    <div class="container">
+        <div class="tittle" id="link_category">Ваша цель<p class="selectPrice">Можно выбрать несколько</p>
+        </div>
+        <form action="" method="POST" id="pay-form">
+            <div class="content__a content__inner " id="contentInnerLeisure">
+                <input type="checkbox" name="pay-1" class="pay-checkbox checkbox-by-me" id="checkboxLeisure" onchange="ifChecked('checkboxLeisure', 'contentInnerLeisure', 'text_1')">
+                <div class="content__inner__text" id="text_1">Досуг </div>
+                <div class="content__image"><img src="img/imageDosug.png"></div>
+            </div>                    
+            <div class="content__inner content__a" id="contentInnerWorkBusiness">
+                <input type="checkbox" name="pay-2" class="pay-checkbox checkbox-by-me" id="checkboxWorkBusiness" onchange="ifChecked('checkboxWorkBusiness', 'contentInnerWorkBusiness', 'text_2')">
+                <div class="content__inner__text" id="text_2">Работа и Бизнес</div>
+                <div class="content__image"><img src="img/imageWorkAndBusiness.png"></div>
+            </div>
+            <div class="content__inner content__a" id="contentInnerEducation">
+                <input type="checkbox" name="pay-3" class="pay-checkbox checkbox-by-me" id="checkboxEducation" onchange="ifChecked('checkboxEducation', 'contentInnerEducation', 'text_3')">
+                <div class="content__inner__text" id="text_3">Образование</div>                       
+                <div class="content__image"> <img src="img/imageEducation.png"></div>
+            </div>
+            <div class="content__inner content__a" id="contentInnerTravel">
+                 <input type="checkbox" name="pay-4" class="pay-checkbox checkbox-by-me" id="checkboxTravel" onchange="ifChecked('checkboxTravel', 'contentInnerTravel', 'text_4')">
+                <div class="content__inner__text" id="text_4">Путешествия</div>                    
+                <div class="content__image"> <img src="img/imageAdventure.png"></div>
+            </div>
+            <div class="content__inner content__a" id="contentInnerCommunication">
+                <input type="checkbox" name="pay-5" class="pay-checkbox checkbox-by-me" id="checkboxCommunication" onchange="ifChecked('checkboxCommunication', 'contentInnerCommunication', 'text_5')">
+                <div class="content__inner__text" id="text_5">Общение</div>
+                <div class="content__image"> <img src="img/imageObwenie.png"></div>
+            </div>
+            <div class="content__inner content__a" id="contentInnerWorld">
+                <input type="checkbox" name="pay-6" class="pay-checkbox checkbox-by-me" id="checkboxWorld" onchange="ifChecked('checkboxWorld', 'contentInnerWorld', 'text_6')">
+                <div class="content__inner__text" id="text_6">Окружающий мир</div>
+                <div class="content__image"> <img src="img/imageWorld.png"></div>
+            </div>
+            <div class="content__inner content__a" id="contentInnerInterview">
+                 <input type="checkbox" name="pay-7" class="pay-checkbox checkbox-by-me" id="checkboxInterview" onchange="ifChecked('checkboxInterview', 'contentInnerInterview', 'text_7')">
+                <div class="content__inner__text" id="text_7">Интерьер</div>
+                <div class="content__image" > <img src="img/imageInterer.png"></div>
+            </div>
+            <div class="content__inner content__a" id="contentInnerFeelings">
+                 <input type="checkbox" name="pay-8" class="pay-checkbox checkbox-by-me" id="checkboxFeelings" onchange="ifChecked('checkboxFeelings', 'contentInnerFeelings', 'text_8')">
+                <div class="content__inner__text" id="text_8">Чувства и эмоции</div>
+                <div class="content__image"> <img src="img/imageEmotions.png"></div>
+            </div>
+            <div class="content__inner content__a" id="contentInnerHealth">
+                 <input type="checkbox" name="pay-9" class="pay-checkbox checkbox-by-me" id="checkboxHealth" onchange="ifChecked('checkboxHealth', 'contentInnerHealth', 'text_9')">
+                <div class="content__inner__text" id="text_9">Здоровье</div>
+                <div class="content__image"> <img src="img/imageHealth.png"></div>
+            </div>
+        <a href="" class="ownSet">
+                <p class="ownSetText">Свой набор</p>
+        </a>
+
+        <button type="submit" class="btn btn-primary">
+            <p class="submit">Получить доступ</p>
+        </button>
+        </form>
+    </div>
+</main>
+<script type="text/javascript" src="Scripts/JavaS.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</body>
+</html>

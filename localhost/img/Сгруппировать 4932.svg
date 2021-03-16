@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3079.878" height="2952.878" viewBox="0 0 3079.878 2952.878">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0e81a2"/>
+      <stop offset="1" stop-color="#2000ef" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0e81a2"/>
+      <stop offset="1" stop-color="#2000ef"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_4932" data-name="Сгруппировать 4932" transform="translate(220.939 1801.939)">
+    <g id="Сгруппировать_4931" data-name="Сгруппировать 4931">
+      <g id="Сгруппировать_4922" data-name="Сгруппировать 4922">
+        <g id="Прямоугольник_2" data-name="Прямоугольник 2" transform="translate(-127.939 -473.285) rotate(-45)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)">
+          <rect width="1879" height="2297" rx="454" stroke="none"/>
+          <rect x="0.5" y="0.5" width="1878" height="2296" rx="453.5" fill="none"/>
+        </g>
+        <g id="Прямоугольник_4" data-name="Прямоугольник 4" transform="translate(-93.939 -473.285) rotate(-45)" stroke="#707070" stroke-width="1" opacity="0.1" fill="url(#linear-gradient-2)">
+          <rect width="1879" height="2297" rx="435" stroke="none"/>
+          <rect x="0.5" y="0.5" width="1878" height="2296" rx="434.5" fill="none"/>
+        </g>
+        <g id="Прямоугольник_3" data-name="Прямоугольник 3" transform="translate(-220.939 -473.285) rotate(-45)" stroke="#707070" stroke-width="1" opacity="0.1" fill="url(#linear-gradient-2)">
+          <rect width="1879" height="2297" rx="435" stroke="none"/>
+          <rect x="0.5" y="0.5" width="1878" height="2296" rx="434.5" fill="none"/>
+        </g>
+      </g>
+      <g id="Эллипс_3" data-name="Эллипс 3" transform="translate(1358 -478)" fill="none" stroke="#fff" stroke-width="30" opacity="0.04">
+        <circle cx="478.5" cy="478.5" r="478.5" stroke="none"/>
+        <circle cx="478.5" cy="478.5" r="493.5" fill="none"/>
+      </g>
+      <g id="Эллипс_4" data-name="Эллипс 4" transform="translate(-109 -583)" fill="none" stroke="#fff" stroke-width="30" opacity="0.04">
+        <circle cx="478.5" cy="478.5" r="478.5" stroke="none"/>
+        <circle cx="478.5" cy="478.5" r="493.5" fill="none"/>
+      </g>
+    </g>
+    <line id="Линия_45" data-name="Линия 45" y2="940" transform="translate(1920.5 -92.5)" fill="none" stroke="#707070" stroke-width="5"/>
+    <line id="Линия_46" data-name="Линия 46" x1="1990" transform="translate(-41.5 0.5)" fill="none" stroke="#707070" stroke-width="5"/>
+  </g>
+</svg>

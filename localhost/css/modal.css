@@ -1,0 +1,32 @@
+.main_block {
+	display: flex;
+	justify-content: space-between;
+	}
+
+.adv_text{
+	font-size: 80px;
+	font-weight: 500;
+	margin-left: 117px;
+	color: #0E81A2;
+	margin-top: 115px;
+	margin-bottom: 117px;
+}
+.modal_headerCategory{
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.modal_headerCategory img{
+	width: 329px;
+	border-radius: 40px;
+}
+.block-item{
+	text-align: center;
+	width: 359px;
+	height: 552px;
+	border-radius: 19px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+}
+.linkModal{
+	margin: 0 auto;
+}

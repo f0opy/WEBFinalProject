@@ -1,0 +1,854 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cards.kz</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/Login__Styles.css">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/modal.css" type="text/css" rel="stylesheet"> 
+</head>
+
+<body>
+
+	<header class="headerForindex">
+		<div class="container">
+			<div class="header">
+				<a href="" class="logo" id="link_main"><img src="img/logo.svg"></a>
+				<nav class="menu">
+					<a href="#link_main">Главная</a>
+					<a href="#link_category">Категории</a>
+					<a href="#popular_cards">Популярные </a>
+					<a href="#howToLearn">Как учиться?</a>
+					<a href="#contacts">Контакты</a>
+					<div class="menu__icon">
+						<a href=><img src="img/commerce-and-shopping.svg" height="17.49px"></a>
+						<a href=><img src="img/search.svg" height="17.49px"></a>
+					</div>
+				</nav>
+				<a href="javascript:openModal()" class="menu__reg">
+					<div class="menu__login">
+						<div class="menu__login__text">Вход или Регистрация</div>
+						<div class="menu__login__text2">Вход/Рег</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="prefix-Dialog" id="Modal">
+			<div id="container_log">
+				<div class="main__image"><img src="img/imageLogin.svg" alt=""></div>
+				<a href="registration.php" class="btn1">
+					<div class="btn__text">Я тут в первый раз</div>
+				</a>
+				<a href="" class="btn1">
+					<div class="btn__text">У меня уже есть аккаунт</div>
+				</a>
+				<a class="prefix-close" title="Закрыть" href="#close"></a>
+			</div>
+
+		</div>
+		<!--Carousel-->
+
+		<div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" id=""><span class="carousel-control"></span></li>
+				<li data-bs-target="#carouselControls" data-bs-slide-to="1" color="black"><span class="carousel-control"></span></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-interval="3000">
+					<div class="carousel_content">
+						<div class="carousel_content_left">
+							<h2 class="carousel-text">Изучайте английский язык легко!</h2>
+							<p class="carousel-small-text">Быстрое запоминание английских слов</p>
+							<button class="carousel-buttom">Попробовать бесплатно</button>
+							<div class="icon_for_carousel" id="link_contact">
+								<a href=""><img src="img/insta.png" id="soc"></a>
+								<a href=""><img src="img/telegram.png" id="soc"></a>
+								<a href=""><img src="img/facebook.png" id="soc"></a>
+								<a href=""><img src="img/twitter.png" id="soc"></a>
+							</div>
+						</div>
+						<div class="carousel_content_right">
+							<img src="img/carousel_image_1 (2).png">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" data-interval="3000">
+					<div class="carousel_content">
+						<div class="carousel_content_left">
+							<h2 class="carousel-text2">Мнемотехника, или как выучить Английский язык легко?</h2>
+							<p class="carousel-small-text">Простые приемы и способы запоминания <br> слов, выражений и
+								целых предложений!</p>
+							<button class="carousel-buttom">Попробовать бесплатно</button>
+							<div class="icon_for_carousel " id="link_contact">
+								<a href=""><img src="img/insta.png" id="soc"></a>
+								<a href=""><img src="img/telegram.png" id="soc"></a>
+								<a href=""><img src="img/facebook.png" id="soc"></a>
+								<a href=""><img src="img/twitter.png" id="soc"></a>
+							</div>
+						</div>
+						<div class="carousel_content_right" id="img_for_carousel2">
+							<img src="img/carousel_image_2.png">
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#e0e0e0"
+					class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+				</svg>
+			</a>
+			<a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#e0e0e0"
+					class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+					<path fill-rule="evenodd"
+						d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+				</svg>
+			</a>
+		</div>
+		<!--Carousel end-->
+	</header>
+
+
+	<main>
+		<div class="container">
+			<div class="tittle" id="link_category">Английский для ваших целей
+			</div>
+
+			<div class="content">
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Досуг </div>
+						<div class="content__image"><img src="img/imageDosug.png"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Работа и Бизнес</div>
+						<div class="content__image"><img src="img/imageWorkAndBusiness.png"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Образование</div>
+						<div class="content__image"> <img src="img/imageEducation.png"></div>
+					</div>
+				</a>
+				<!--Модальное новое окно-->
+
+				<a href="#link_category" id="adventureBtn" class="content__a">
+				    <div class="content__inner">
+				        <div class="content__inner__text">Путешествия</div>
+				        <div class="content__image"> <img src="img/imageAdventure.png"></div>
+				    </div>
+				</a>
+
+				<div id="adventureModal" class="modal">
+
+				    <!-- Modal content -->
+				    <div class="modal-content">
+				        <div class="advClose">
+				            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+				                <g id="Сгруппировать_4933" data-name="Сгруппировать 4933"
+				                    transform="translate(1659 -2136)">
+				                    <circle id="Эллипс_71" data-name="Эллипс 71" cx="21" cy="21" r="21"
+				                        transform="translate(-1659 2136)" fill="#bfebec" />
+				                    <path id="#ic_arrow_upward_5001"
+				                        d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+				                        transform="translate(-1650 2145)" fill="#0e81a2" />
+				                </g>
+				            </svg>
+				        </div>
+				    
+				        <div class="modal_headerCategory">
+				   				<h2 class="adv_text">Путешествия</h2>
+				                <img src="img/imageTravel.png" alt="" >
+				        </div>
+				        <hr width="100%" id="modal_header_hr">
+
+				        <div class="main_content">
+				            <div class="main_block">
+
+				                <div class="block-item">
+				                    <img src="img/market.png" alt="1">
+				                    <h3 class="carousel_subtext_upper">the market</h3>
+				                    <h3 class="carousel_subtext_under">магазин</h3>
+				                </div>
+
+				                <div class="block-item">
+				                    <img src="img/airport.png" alt="2">
+				                    <h3 class="carousel_subtext_upper">the airport</h3>
+				                    <h3 class="carousel_subtext_under">аэропорт</h3>
+				                </div>
+
+				                <div class="block-item">
+				                    <img src="img/bus.png" alt="3">
+				                    <h3 class="carousel_subtext_upper">the bus</h3>
+				                    <h3 class="carousel_subtext_under">автобус</h3>
+				                </div>
+
+				                <div class="block-item">
+				                    <img src="img/imageTravelNature.png" alt="4">
+				                    <h3 class="carousel_subtext_upper">the nature</h3>
+				                    <h3 class="carousel_subtext_under">природа</h3>
+				                </div>
+				            </div>
+				        </div>
+				        <a href="paycards.html" class="linkModal">
+				        <button id="get_access">Получить доступ</button>
+				    	</a>
+				    </div>
+				</div>
+
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Общение</div>
+						<div class="content__image"> <img src="img/imageObwenie.png"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Окружающий мир</div>
+						<div class="content__image"> <img src="img/imageWorld.png"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Интерьер</div>
+						<div class="content__image"> <img src="img/imageInterer.png"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Чувства и эмоции</div>
+						<div class="content__image"> <img src="img/imageEmotions.png"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content__a">
+					<div class="content__inner">
+						<div class="content__inner__text">Здоровье</div>
+						<div class="content__image"> <img src="img/imageHealth.png"></div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+
+		<div class="levels">
+			<h2 id="movedd">Уровни знания английских слов</h2>
+			<div class="levels_item">
+				<div class="level" id="level_1">
+					<div class="level_img">
+						<img src="img/level_500.svg">
+					</div>
+					<p class="level_text">База английского языка</p>
+					<p id="l_500">500</p>
+					<div class="level_count">
+						<div class="arrow">
+							<a href="#movedd" id="myBtn">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40.885" height="40.885"
+									viewBox="0 0 40.885 40.885">
+									<path id="ic_arrow_upward_500"
+										d="M4,24.443l3.6,3.6L21.887,13.787v31.1H27v-31.1L41.257,28.071l3.629-3.629L24.443,4Z"
+										transform="translate(44.885 -4) rotate(90)" fill="#cdcdcd" />
+								</svg>
+							</a>
+						</div>
+						<span>слов</span>
+					</div>
+				</div>
+
+
+
+
+				<div id="myModal" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<div class="close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+								<g id="Сгруппировать_4933" data-name="Сгруппировать 4933"
+									transform="translate(1659 -2136)">
+									<circle id="Эллипс_71" data-name="Эллипс 71" cx="21" cy="21" r="21"
+										transform="translate(-1659 2136)" fill="#bfebec" />
+									<path id="#ic_arrow_upward_5001"
+										d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+										transform="translate(-1650 2145)" fill="#0e81a2" />
+								</g>
+							</svg>
+						</div>
+
+						<div class="modal_header">
+							<div class="header_left">
+								<img src="img/Modal_image_500.png" alt="">
+							</div>
+							<div class="header_right">
+								<div class="header_right_text">
+									<div id="header_right_levels">Уровень знания </div>
+									<div id="l_5001">500</div>
+									<div id="header_right_words">слов</div>
+								</div>
+							</div>
+						</div>
+						<hr width="100%" id="modal_header_hr">
+
+						<div class="main_content">
+							<h1 id="main_content_header">база английского языка</h1>
+							<p>Это пороговый уровень, так называемый уровень выживания. Если вдруг с таким лексическим
+								запасом вы окажетесь в англоязычной среде, то выжить в ней вы сможете. 500 слов хватит
+								для того, чтобы понимать иностранную речь в самых обычных ситуациях и общаться с другими
+								людьми.</p>
+						</div>
+
+						<button id="get_access">Получить доступ</button>
+					</div>
+				</div>
+
+
+
+				<div class="level_2">
+					<div class="level">
+						<div class="level_img">
+							<img src="img/level_1000.svg">
+						</div>
+						<p class="level_text">Общение на английском языке в путешествии</p>
+						<p id="l_1000">1000</p>
+						<div class="level_count">
+							<div class="arrow">
+								<a href="#movedd" id="myBtn1000">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40.885" height="40.885"
+										viewBox="0 0 40.885 40.885">
+										<path id="ic_arrow_upward_1000"
+											d="M4,24.443l3.6,3.6L21.887,13.787v31.1H27v-31.1L41.257,28.071l3.629-3.629L24.443,4Z"
+											transform="translate(44.885 -4) rotate(90)" fill="#cdcdcd" />
+									</svg>
+								</a>
+							</div>
+							<span>слов</span>
+						</div>
+					</div>
+
+
+					<div id="myModal1000" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<div class="close1000">
+								<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+									<g id="Сгруппировать_4933" data-name="Сгруппировать 4933"
+										transform="translate(1659 -2136)">
+										<circle id="Эллипс_71" data-name="Эллипс 71" cx="21" cy="21" r="21"
+											transform="translate(-1659 2136)" fill="#bfebec" />
+										<path id="#ic_arrow_upward_5001"
+											d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+											transform="translate(-1650 2145)" fill="#0e81a2" />
+									</g>
+								</svg>
+							</div>
+
+							<div class="modal_header">
+								<div class="header_left">
+									<img src="img/Modal_image_500.png" alt="">
+								</div>
+								<div class="header_right">
+									<div class="header_right_text">
+										<div id="header_right_levels">Уровень знания </div>
+										<div id="l_10001">1000</div>
+										<div id="header_right_words">слов</div>
+									</div>
+								</div>
+							</div>
+							<hr width="100%" id="modal_header_hr">
+
+							<div class="main_content">
+								<h1 id="main_content_header">общение на английском языке в путешествии</h1>
+								<p>Пересекая эту черту, из активного слушателя вы превращаетесь в частника беседы. Вы
+									можете объясниться на английском в знакомой ситуации и получить ответы на
+									интересующие вопросы.
+									1000 слов позволит свободно общаться с иностранцами в путешествии. </p>
+							</div>
+
+							<button id="get_access">Получить доступ</button>
+						</div>
+					</div>
+
+
+					<div class="level">
+						<div class="level_img">
+							<img src="img/level_2000.svg">
+						</div>
+						<p class="level_text">Чтение книг, просмотр фильмов</p>
+						<p id="l_2000">2000</p>
+						<div class="level_count">
+							<div class="arrow">
+								<a href="#movedd" id="myBtn2000">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40.885" height="40.885"
+										viewBox="0 0 40.885 40.885">
+										<path id="ic_arrow_upward_2000"
+											d="M4,24.443l3.6,3.6L21.887,13.787v31.1H27v-31.1L41.257,28.071l3.629-3.629L24.443,4Z"
+											transform="translate(44.885 -4) rotate(90)" fill="#cdcdcd" />
+									</svg>
+								</a>
+							</div>
+							<span>слов</span>
+						</div>
+					</div>
+
+					<div id="myModal2000" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<div class="close2000">
+								<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+									<g id="Сгруппировать_4933" data-name="Сгруппировать 4933"
+										transform="translate(1659 -2136)">
+										<circle id="Эллипс_71" data-name="Эллипс 71" cx="21" cy="21" r="21"
+											transform="translate(-1659 2136)" fill="#bfebec" />
+										<path id="#ic_arrow_upward_5001"
+											d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+											transform="translate(-1650 2145)" fill="#0e81a2" />
+									</g>
+								</svg>
+							</div>
+
+							<div class="modal_header">
+								<div class="header_left">
+									<img src="img/Modal_image_500.png" alt="">
+								</div>
+								<div class="header_right">
+									<div class="header_right_text">
+										<div id="header_right_levels">Уровень знания </div>
+										<div id="l_20001">2000</div>
+										<div id="header_right_words">слов</div>
+									</div>
+								</div>
+							</div>
+							<hr width="100%" id="modal_header_hr">
+
+							<div class="main_content">
+								<h1 id="main_content_header">чтение книг, просмотр фильмов</h1>
+								<p>Активный словарный запас. Такого количества слов вам хватит, чтобы общаться в течение
+									всего дня, читать книги, смотреть фильмы и сериалы.
+								</p>
+							</div>
+
+							<button id="get_access">Получить доступ</button>
+						</div>
+					</div>
+
+
+
+				</div>
+				<div class="level_3">
+					<div class="level">
+						<div class="level_img">
+							<img src="img/level_3000.svg">
+						</div>
+						<p class="level_text">Свободное общение</p>
+						<p id="l_3000">3000</p>
+						<div class="level_count">
+							<div class="arrow">
+								<a href="#movedd" id="myBtn3000">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40.885" height="40.885"
+										viewBox="0 0 40.885 40.885">
+										<path id="ic_arrow_upward_3000"
+											d="M4,24.443l3.6,3.6L21.887,13.787v31.1H27v-31.1L41.257,28.071l3.629-3.629L24.443,4Z"
+											transform="translate(44.885 -4) rotate(90)" fill="#cdcdcd" />
+									</svg>
+								</a>
+							</div>
+							<span>слов</span>
+						</div>
+
+						<div id="myModal3000" class="modal">
+
+							<!-- Modal content -->
+							<div class="modal-content">
+								<div class="close3000">
+									<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+										<g id="Сгруппировать_4933" data-name="Сгруппировать 4933"
+											transform="translate(1659 -2136)">
+											<circle id="Эллипс_71" data-name="Эллипс 71" cx="21" cy="21" r="21"
+												transform="translate(-1659 2136)" fill="#bfebec" />
+											<path id="#ic_arrow_upward_5001"
+												d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+												transform="translate(-1650 2145)" fill="#0e81a2" />
+										</g>
+									</svg>
+								</div>
+
+								<div class="modal_header">
+									<div class="header_left">
+										<img src="img/Modal_image_500.png" alt="">
+									</div>
+									<div class="header_right">
+										<div class="header_right_text">
+											<div id="header_right_levels">Уровень знания </div>
+											<div id="l_30001">3000</div>
+											<div id="header_right_words">слов</div>
+										</div>
+									</div>
+								</div>
+								<hr width="100%" id="modal_header_hr">
+
+								<div class="main_content">
+									<h1 id="main_content_header">свободное общение</h1>
+									<p>С таким запасом вы можете не только активно отвечать на вопросы, но и вступать в
+										диалог самостоятельно. Вы сможете обсудить последние события в мире,
+										телевизионную передачу или недавний политической конфликт. </p>
+								</div>
+
+								<button id="get_access">Получить доступ</button>
+							</div>
+						</div>
+
+					</div>
+					<div class="level">
+						<div class="level_img">
+							<img src="img/level_3500.svg">
+						</div>
+						<p class="level_text">Обучение на английском языке</p>
+						<p id="l_3500">3500</p>
+						<div class="level_count">
+							<div class="arrow">
+								<a href="#movedd" id="myBtn3500">
+									<svg xmlns="http://www.w3.org/2000/svg" width="40.885" height="40.885"
+										viewBox="0 0 40.885 40.885">
+										<path id="ic_arrow_upward_3500"
+											d="M4,24.443l3.6,3.6L21.887,13.787v31.1H27v-31.1L41.257,28.071l3.629-3.629L24.443,4Z"
+											transform="translate(44.885 -4) rotate(90)" fill="#cdcdcd" />
+									</svg>
+								</a>
+							</div>
+							<span>слов</span>
+						</div>
+					</div>
+					<div id="myModal3500" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<div class="close3500">
+								<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+									<g id="Сгруппировать_4933" data-name="Сгруппировать 4933"
+										transform="translate(1659 -2136)">
+										<circle id="Эллипс_71" data-name="Эллипс 71" cx="21" cy="21" r="21"
+											transform="translate(-1659 2136)" fill="#bfebec" />
+										<path id="#ic_arrow_upward_5001"
+											d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+											transform="translate(-1650 2145)" fill="#0e81a2" />
+									</g>
+								</svg>
+							</div>
+
+							<div class="modal_header">
+								<div class="header_left">
+									<img src="img/Modal_image_500.png" alt="">
+								</div>
+								<div class="header_right">
+									<div class="header_right_text">
+										<div id="header_right_levels">Уровень знания </div>
+										<div id="l_35001">3500</div>
+										<div id="header_right_words">слов</div>
+									</div>
+								</div>
+							</div>
+							<hr width="100%" id="modal_header_hr">
+
+							<div class="main_content">
+								<h1 id="main_content_header">обучение на английском языке</h1>
+								<p>Это та лексика, которую студент использует в письменной или устной академической
+									речи. Усвоив этот объем слов, можно писать мотивациорные письма на поступление в
+									вузы, где обучение проходит на английском языке.</p>
+							</div>
+
+							<button id="get_access">Получить доступ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="level" id="level_6">
+					<div class="level_img">
+						<img src="img/level_5000.svg">
+					</div>
+					<p class="level_text">Cвободное владение английским языком</p>
+					<p id="l_5000">5000</p>
+					<div class="level_count">
+						<div class="arrow">
+							<a href="#movedd" id="myBtn5000">
+								<svg xmlns="http://www.w3.org/2000/svg" width="40.885" height="40.885"
+									viewBox="0 0 40.885 40.885">
+									<path id="ic_arrow_upward_5000"
+										d="M4,24.443l3.6,3.6L21.887,13.787v31.1H27v-31.1L41.257,28.071l3.629-3.629L24.443,4Z"
+										transform="translate(44.885 -4) rotate(90)" fill="#cdcdcd" />
+								</svg>
+							</a>
+						</div>
+						<span>слов</span>
+					</div>
+				</div>
+
+				<div id="myModal5000" class="modal">
+
+					<!-- Modal content -->
+					<div class="modal-content">
+						<div class="close5000">
+							<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+								<g id="Сгруппировать_4933" data-name="Сгруппировать 4933"
+									transform="translate(1659 -2136)">
+									<circle id="Эллипс_71" data-name="Эллипс 71" cx="21" cy="21" r="21"
+										transform="translate(-1659 2136)" fill="#bfebec" />
+									<path id="#ic_arrow_upward_5001"
+										d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"
+										transform="translate(-1650 2145)" fill="#0e81a2" />
+								</g>
+							</svg>
+						</div>
+
+						<div class="modal_header">
+							<div class="header_left">
+								<img src="img/Modal_image_500.png" alt="">
+							</div>
+							<div class="header_right">
+								<div class="header_right_text">
+									<div id="header_right_levels">Уровень знания </div>
+									<div id="l_50001">5000</div>
+									<div id="header_right_words">слов</div>
+								</div>
+							</div>
+						</div>
+						<hr width="100%" id="modal_header_hr">
+
+						<div class="main_content">
+							<h1 id="main_content_header">свободное владение английским языком</h1>
+							<p>Если избавитесь от акцента – вполне можно сойти за среднестатистического британца. Владея
+								таким количеством слов вы сможете говорить, читать и писать на английском, в редких
+								случаях ощущая недостаток лексического запаса.</p>
+						</div>
+
+						<button id="get_access">Получить доступ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="brain">
+			<div class="brain_img">
+				<div class="brain_blue"><img src="img/brain_blue_new.png"></div>
+				<div class="brain_red"><img src="img/brain_red_new.png"></div>
+			</div>
+			<div class="brain_text">
+				<h2>Мнемотехники</h2>
+				<p>это специальные приёмы запоминания информации с помощью ассоциаций, метода локаций и интервальных
+					повторений. Эти техники работают на основе психических механизмов нашей памяти.</p>
+			</div>
+		</div>
+		<div class="row top-cat">
+			<h1 class="popular-cards" id="popular_cards">Популярные категории</h1>
+			<div class="owl-carousel owl-carousel-1 owl-loaded">
+				<div class="owl-stage-outer">
+					<div class="owl-stage">
+						<div class="owl-item">
+							<img src="img/education.png" alt="1">
+							
+								<h3 class="carousel_subtext_upper">the education</h3>
+								<h3 class="carousel_subtext_under">учеба</h3>
+							
+						</div>
+
+						<div class="owl-item">
+							<img src="img/family.png" alt="2">
+							<h3 class="carousel_subtext_upper">the family</h3>
+							<h3 class="carousel_subtext_under">семья</h3>
+						</div>
+
+						<div class="owl-item">
+							<img src="img/bus.png" alt="3">
+							<h3 class="carousel_subtext_upper">the bus</h3>
+							<h3 class="carousel_subtext_under">автобус</h3>
+						</div>
+
+						<div class="owl-item">
+							<img src="img/market.png" alt="4">
+							<h3 class="carousel_subtext_upper">THE MARKET</h3>
+							<h3 class="carousel_subtext_under">МАГАЗИН</h3>
+						</div>
+
+						<div class="owl-item">
+							<img src="img/airport.png" alt="5">
+							<h3 class="carousel_subtext_upper">airport</h3>
+							<h3 class="carousel_subtext_under">аэропорт</h3>
+							
+						</div>
+					
+						
+					</div>
+				</div>
+				<div class="owl-nav">
+					<div class="owl-prev"><i class="bi bi-arrow-left-circle-fill"></i></div>
+					<div class="owl-next"><i class="bi bi-arrow-right-circle-fill"></i></div>
+				</div>
+			</div>
+			<a href="#" class="all-cat-link my-5">Все категории</a>
+		</div>
+		
+		<div class="howToLearn">
+			<div class="howToLearn__content">
+				<h3 class="howToLearn__Header" id="howToLearn">Как выучить АНГЛИЙСКИЕ СЛОВА?</h3>
+				<div class="howToLearn__Text">
+					<p>Новые английские слова можно запомнить с помощью метода ключевого слова. Способ этот очень
+						простой и заключается он в следующем: к английскому слову нужно подобрать ключевое слово из
+						родного языка, которое будет похоже на него по звучанию. </p>
+				</div>
+				<div class="howToLearn__Steps">
+					<div class="circles">
+						<div class="circle__content">
+							<div class="circle c1">
+								<p>01</p>
+							</div>
+						</div>
+						<div class="circle-between-line"></div>
+						<div class="circle__content">
+							<div class="circle c2">
+								<p>02</p>
+							</div>
+						</div>
+						<div class="circle-between-line"></div>
+						<div class="circle__content">
+							<div class="circle c3">
+								<p>03</p>
+							</div>
+						</div>
+
+
+					</div>
+
+
+				</div>
+				<div class="circles__text">
+					<div class="circles__texts">Ищем ключевое слово</div>
+					<div class="circles__texts">Представляем ситуацию</div>
+					<div class="circles__texts">Мысленно создаем картинку</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row pay-cards my-5">
+			
+			<div class="owl-carousel owl-carousel-2 owl-loaded">
+				<div class="owl-stage-outer">
+					<div class="owl-stage">
+						<div class="owl-item fullwidthcards" id="">
+							<img src="img/airport.png" alt="6">
+							<h3 class="carousel_subtext_upper">airport</h3>
+							<h3 class="carousel_subtext_under">аэропорт</h3>
+							
+						</div>
+						<div class="owl-item fullwidthcards" id="fullwidthcards">
+							<img src="img/know.png" alt="2">
+							
+						</div>
+
+						<div class="owl-item" id="fullwidthcards">
+							<img src="img/make.png" alt="3">
+							
+						</div>
+
+						<div class="owl-item" id="fullwidthcards">
+							<img src="img/do.png" alt="4">
+						</div>
+
+						<div class="owl-item" id="fullwidthcards">
+							<img src="img/go.png" alt="5">
+						</div>
+
+						<div class="owl-item" id="fullwidthcards">
+							<img src="img/cry.png" alt="6">
+						
+						</div>
+						
+					</div>
+				</div>
+				<div class="pay-div"><a href="paycards.html" class="btn pay-btn">Получить доступ</a></div>
+
+			</div>
+		</div>
+
+		<div class="last_page">
+			<div class="last_page_upper">
+				<div class="last_page_upper_text">
+					<p>Благодаря ярким ассоциациям вы будете запоминать от <b>10</b> до <b>30</b> новых слов в день.</p>
+				</div>
+				<div class="last_page_upper_img">
+					<img src="img/last_page_img.png">
+				</div>
+			</div>
+			<div class="last_page_under">
+				<div class="last_page_under_header">
+					<p id="contacts">Хотите узнать по подробнее?</p>
+				</div>
+				<div class="last_page_under_text">
+					<div class="input__text">
+						<form action="mail.php" method="POST">
+						<input type="text" name="phone_number" placeholder="НОМЕР ТЕЛЕФОНА" id="input_phone">
+						
+						<a href="">
+							<div class="input__submit"><input type="submit" value="СВЯЖИТЕСЬ С НАМИ" id="submit"></div>
+						</a>
+					</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="icon" id="link_contact">
+			<a href=""><img src="img/insta.png" id="soc"></a>
+			<a href=""><img src="img/telegram.png" id="soc"></a>
+			<a href=""><img src="img/facebook.png" id="soc"></a>
+			<a href=""><img src="img/twitter.png" id="soc"></a>
+		</div>
+		<hr>
+		<div class="footer">
+			<div class="footer__items">
+				<a href="#link_main">Главная</a>
+				<a href="#link_category">Категории</a>
+				<a href="#popular_cards">Популярные </a>
+				<a href="#howToLearn">Как учиться?</a>
+				<a href="#contacts">Контакты</a>
+			</div>
+		</div>
+	</footer>
+	<script src="Scripts/owlcarousel/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+	</script>
+	<script src="Scripts/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="Scripts/JavaS.js" type="text/javascript"></script>
+</body>
+
+</html>
